@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="83d67aa4db4023008a3a85184b96196a" sys_domain="global" table="x_241706_absolute_device" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-17 21:12:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8fd6baa4db4023008a3a85184b961958</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_241706_absolute_device" name="x_241706_absolute_device" sys_domain="global" view="Default view">83d67aa4db4023008a3a85184b96196a</sys_ui_form>
+            <sys_ui_section caption="Absolute Device" display_value="Absolute Device" name="x_241706_absolute_device" sys_domain="global" view="Default view">b9b8c614dbc023008a3a85184b961953</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-17 21:12:03</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-17 21:12:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8bd6baa4db4023008a3a85184b961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_241706_absolute_device" name="x_241706_absolute_device" sys_domain="global" view="Default view">83d67aa4db4023008a3a85184b96196a</sys_ui_form>
+            <sys_ui_section caption="Hardware Details" display_value="Hardware Details" name="x_241706_absolute_device" sys_domain="global" view="Default view">4fd67aa4db4023008a3a85184b961968</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-17 21:12:03</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-17 22:49:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b33dcb64db8023008a3a85184b961915</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_241706_absolute_device" name="x_241706_absolute_device" sys_domain="global" view="Default view">83d67aa4db4023008a3a85184b96196a</sys_ui_form>
+            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 18:13:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2daa69e5db4023008a3a85184b961943</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_241706_absolute_device" name="x_241706_absolute_device" sys_domain="global" view="Default view">83d67aa4db4023008a3a85184b96196a</sys_ui_form>
+            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 18:13:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>29aa69e5db4023008a3a85184b961948</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_241706_absolute_device" name="x_241706_absolute_device" sys_domain="global" view="Default view">83d67aa4db4023008a3a85184b96196a</sys_ui_form>
+            <sys_ui_section caption="CPU" display_value="CPU" name="x_241706_absolute_device" sys_domain="global" view="Default view">2daa29e5db4023008a3a85184b96196b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 18:13:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>69aa69e5db4023008a3a85184b96194d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_241706_absolute_device" name="x_241706_absolute_device" sys_domain="global" view="Default view">83d67aa4db4023008a3a85184b96196a</sys_ui_form>
+            <sys_ui_section caption="BIOS" display_value="BIOS" name="x_241706_absolute_device" sys_domain="global" view="Default view">65aa29e5db4023008a3a85184b96196c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 18:13:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-17 21:39:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fe1d32e8db4023008a3a85184b9619df</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_241706_absolute_device" name="x_241706_absolute_device" sys_domain="global" view="Default view">83d67aa4db4023008a3a85184b96196a</sys_ui_form>
+            <sys_ui_section caption="History" display_value="History" name="x_241706_absolute_device" sys_domain="global" view="Default view">b21d32e8db4023008a3a85184b9619dd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-17 21:48:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee2f326cdb4023008a3a85184b9619d6</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_241706_absolute_device" name="x_241706_absolute_device" sys_domain="global" view="Default view">83d67aa4db4023008a3a85184b96196a</sys_ui_form>
+            <sys_ui_section caption="Raw" display_value="Raw" name="x_241706_absolute_device" sys_domain="global" view="Default view">ae2f326cdb4023008a3a85184b9619d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_241706_absolute_device</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-17 21:12:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>83d67aa4db4023008a3a85184b96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_241706_absolute_device</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
+            <sys_update_name>sys_ui_form_sections_83d67aa4db4023008a3a85184b96196a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-17 21:12:02</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

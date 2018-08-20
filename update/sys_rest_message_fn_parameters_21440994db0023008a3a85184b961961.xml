@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
     <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
         <name>abtDateTime</name>
-        <rest_message_function display_value="LookupSingleDeviceWithSerial">0904c518db0023008a3a85184b96193c</rest_message_function>
+        <rest_message_function display_value="LookupSingleDeviceWithId">0904c518db0023008a3a85184b96193c</rest_message_function>
         <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-16 18:13:05</sys_created_on>

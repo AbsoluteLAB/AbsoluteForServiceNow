@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
     <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
-        <name>abtAuthHeader</name>
-        <rest_message_function display_value="LookupSingleDeviceWithId">0904c518db0023008a3a85184b96193c</rest_message_function>
+        <name>serial</name>
+        <rest_message_function display_value="LookupDeviceIdBySerialNumber">8e809d10db4023008a3a85184b961953</rest_message_function>
         <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-16 18:12:48</sys_created_on>
-        <sys_id>02344918db0023008a3a85184b961947</sys_id>
+        <sys_created_on>2018-08-16 19:08:56</sys_created_on>
+        <sys_id>d1119d10db4023008a3a85184b96195e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>abtAuthHeader</sys_name>
+        <sys_name>serial</sys_name>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
-        <sys_update_name>sys_rest_message_fn_parameters_02344918db0023008a3a85184b961947</sys_update_name>
+        <sys_update_name>sys_rest_message_fn_parameters_d1119d10db4023008a3a85184b96195e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-16 18:12:48</sys_updated_on>
+        <sys_updated_on>2018-08-16 19:08:56</sys_updated_on>
         <type>string</type>
         <value/>
     </sys_rest_message_fn_parameters>

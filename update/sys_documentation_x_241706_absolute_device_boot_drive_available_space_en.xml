@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="boot_drive_available_space" label="Boot Drive Available Space" language="en" table="x_241706_absolute_device">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>boot_drive_available_space</element>
+            <help/>
+            <hint/>
+            <label>Boot Drive Available Space</label>
+            <language>en</language>
+            <name>x_241706_absolute_device</name>
+            <plural>Boot Drive Available Spaces</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 18:07:08</sys_created_on>
+            <sys_id>b34969a5db4023008a3a85184b961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Boot Drive Available Space</sys_name>
+            <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
+            <sys_update_name>sys_documentation_x_241706_absolute_device_boot_drive_available_space_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 18:07:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
