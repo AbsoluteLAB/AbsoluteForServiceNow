@@ -4,13 +4,13 @@
             <element>policy_group_uid</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:01</sys_created_on>
-            <sys_id>f1aa69e5db4023008a3a85184b961989</sys_id>
+            <sys_created_on>2018-08-20 20:14:35</sys_created_on>
+            <sys_id>e276ce29db8023008a3a85184b96197c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:01</sys_updated_on>
+            <sys_updated_on>2018-08-20 20:14:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,69 +18,111 @@
             <element>hardware_status</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:01</sys_created_on>
-            <sys_id>75aa69e5db4023008a3a85184b961989</sys_id>
+            <sys_created_on>2018-08-20 20:14:35</sys_created_on>
+            <sys_id>6676ce29db8023008a3a85184b96197c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:01</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>edd_status</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:01</sys_created_on>
-            <sys_id>f5aa69e5db4023008a3a85184b961989</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:01</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:01</sys_created_on>
-            <sys_id>79aa69e5db4023008a3a85184b961989</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:01</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>policy_group_name</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:01</sys_created_on>
-            <sys_id>f9aa69e5db4023008a3a85184b961989</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:01</sys_updated_on>
+            <sys_updated_on>2018-08-20 20:14:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>software_status</element>
-            <position>5</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:01</sys_created_on>
-            <sys_id>7daa69e5db4023008a3a85184b961989</sys_id>
+            <sys_created_on>2018-08-20 20:14:35</sys_created_on>
+            <sys_id>e676ce29db8023008a3a85184b96197c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:01</sys_updated_on>
+            <sys_updated_on>2018-08-20 20:14:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>edd_status</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:14:35</sys_created_on>
+            <sys_id>6a76ce29db8023008a3a85184b96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:14:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:14:35</sys_created_on>
+            <sys_id>ea76ce29db8023008a3a85184b96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:14:35</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>policy_group_name</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:14:35</sys_created_on>
+            <sys_id>6e76ce29db8023008a3a85184b96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:14:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_last_updated</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:14:35</sys_created_on>
+            <sys_id>ee76ce29db8023008a3a85184b96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:14:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>software_last_updated</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:14:35</sys_created_on>
+            <sys_id>6276ce29db8023008a3a85184b96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:14:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>edd_last_updated</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:14:35</sys_created_on>
+            <sys_id>e276ce29db8023008a3a85184b96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Policy Status" display_value="Policy Status" name="x_241706_absolute_device" sys_domain="global" view="Default view">fb3d8b64db8023008a3a85184b961925</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:14:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

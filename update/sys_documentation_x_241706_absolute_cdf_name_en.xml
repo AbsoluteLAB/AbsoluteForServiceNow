@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="serial" label="Serial" language="en" table="x_241706_absolute_device">
+    <sys_documentation element="name" label="Name" language="en" table="x_241706_absolute_cdf">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>serial</element>
+            <element>name</element>
             <help/>
             <hint/>
-            <label>Serial</label>
+            <label>Name</label>
             <language>en</language>
-            <name>x_241706_absolute_device</name>
-            <plural>Serials</plural>
+            <name>x_241706_absolute_cdf</name>
+            <plural>Names</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-16 23:04:13</sys_created_on>
-            <sys_id>2cf682d0dbc023008a3a85184b96194e</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_name>Serial</sys_name>
+            <sys_created_on>2018-08-20 21:00:29</sys_created_on>
+            <sys_id>47f09221dbc023008a3a85184b961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Name</sys_name>
             <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
             <sys_policy/>
             <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
-            <sys_update_name>sys_documentation_x_241706_absolute_device_serial_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_241706_absolute_cdf_name_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 22:49:49</sys_updated_on>
+            <sys_updated_on>2018-08-20 21:00:29</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

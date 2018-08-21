@@ -1,114 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Operating System" section_id="6daa29e5db4023008a3a85184b96196a" sys_domain="global" table="x_241706_absolute_device" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>os_version</element>
+            <element>os_name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
-            <sys_id>7daa69e5db4023008a3a85184b961975</sys_id>
+            <sys_created_on>2018-08-20 20:10:46</sys_created_on>
+            <sys_id>fe954629db8023008a3a85184b9619cb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>os_architecture</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
-            <sys_id>fdaa69e5db4023008a3a85184b961975</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>os_install_date</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
-            <sys_id>71aa69e5db4023008a3a85184b961976</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>os_product_key</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
-            <sys_id>f1aa69e5db4023008a3a85184b961976</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
-            <sys_id>75aa69e5db4023008a3a85184b961976</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>os_build</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
-            <sys_id>f5aa69e5db4023008a3a85184b961976</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>os_csd_version</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
-            <sys_id>79aa69e5db4023008a3a85184b961976</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
+            <sys_updated_on>2018-08-20 20:10:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>os_last_boot_time</element>
-            <position>7</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-20 18:13:00</sys_created_on>
-            <sys_id>f9aa69e5db4023008a3a85184b961976</sys_id>
+            <sys_created_on>2018-08-20 20:10:46</sys_created_on>
+            <sys_id>72954629db8023008a3a85184b9619cc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-20 18:13:00</sys_updated_on>
+            <sys_updated_on>2018-08-20 20:10:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_architecture</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:10:46</sys_created_on>
+            <sys_id>f2954629db8023008a3a85184b9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:10:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_install_date</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:10:46</sys_created_on>
+            <sys_id>76954629db8023008a3a85184b9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:10:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_product_key</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:10:46</sys_created_on>
+            <sys_id>f6954629db8023008a3a85184b9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:10:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:10:46</sys_created_on>
+            <sys_id>7a954629db8023008a3a85184b9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:10:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_version</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:10:46</sys_created_on>
+            <sys_id>fa954629db8023008a3a85184b9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:10:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_build</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:10:46</sys_created_on>
+            <sys_id>7e954629db8023008a3a85184b9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:10:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_csd_version</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-20 20:10:46</sys_created_on>
+            <sys_id>fe954629db8023008a3a85184b9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Operating System" display_value="Operating System" name="x_241706_absolute_device" sys_domain="global" view="Default view">6daa29e5db4023008a3a85184b96196a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-20 20:10:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

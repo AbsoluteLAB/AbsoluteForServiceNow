@@ -3,26 +3,26 @@
         <active>true</active>
         <application display_value="Absolute for ServiceNow">42cfb854db0023008a3a85184b96197a</application>
         <filter/>
-        <name>Devices</name>
+        <name>CDFs</name>
         <order/>
         <path/>
         <path_relative_to_root>false</path_relative_to_root>
         <roles>x_241706_absolute.user</roles>
         <sys_class_name>sys_ui_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-16 22:58:58</sys_created_on>
+        <sys_created_on>2018-08-20 21:00:28</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3bb5ce50dbc023008a3a85184b9619fe</sys_id>
+        <sys_id>bef09221dbc023008a3a85184b96190e</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Devices</sys_name>
+        <sys_name>CDFs</sys_name>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
-        <sys_update_name>sys_ui_module_3bb5ce50dbc023008a3a85184b9619fe</sys_update_name>
+        <sys_update_name>sys_ui_module_bef09221dbc023008a3a85184b96190e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-21 16:21:43</sys_updated_on>
-        <table>x_241706_absolute_device</table>
+        <sys_updated_on>2018-08-21 16:21:36</sys_updated_on>
+        <table>x_241706_absolute_cdf</table>
         <uncancelable>false</uncancelable>
         <view_name/>
     </sys_ui_module>

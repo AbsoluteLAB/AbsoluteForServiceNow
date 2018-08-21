@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="serial" table="x_241706_absolute_device">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="name" table="x_241706_absolute_cdf">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Serial</column_label>
+        <column_label>Name</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,15 +27,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>serial</element>
+        <element>name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>100</max_length>
-        <name>x_241706_absolute_device</name>
+        <max_length>40</max_length>
+        <name>x_241706_absolute_cdf</name>
         <next_element/>
         <primary>false</primary>
         <read_only>true</read_only>
@@ -52,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-16 23:04:13</sys_created_on>
-        <sys_id>4dd642d0dbc023008a3a85184b961917</sys_id>
+        <sys_created_on>2018-08-20 21:00:28</sys_created_on>
+        <sys_id>dca0d2eddb8023008a3a85184b96190d</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Serial</sys_name>
+        <sys_name>Name</sys_name>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
-        <sys_update_name>sys_dictionary_x_241706_absolute_device_serial</sys_update_name>
+        <sys_update_name>sys_dictionary_x_241706_absolute_cdf_name</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-20 22:49:49</sys_updated_on>
+        <sys_updated_on>2018-08-20 23:13:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -13,7 +13,7 @@ AbsoluteAPI.prototype = {
 		this.apiSecret = apiSecret;
 	},
 	fetchAbsoluteUid : function (serialNumber){
-		//Then use that serial Number to go and get the Uid from Absolute servers
+		// Use that serial Number to go and get the Uid from Absolute servers
 		try {
 			var query = "$filter=agentStatus eq 'A' and serial eq '" + serialNumber + "'&$select=id";
 			var abtDT = this._getAbtDateTime();
@@ -40,14 +40,14 @@ AbsoluteAPI.prototype = {
 					//We got a valid response
 					var jResponse = global.JSON.parse(sResponse); //Convert response to Json Object
 					var id = jResponse[0].id;
-					//Return the ID as rquested
+					//Return the ID as requested
 					return String(id);
 				}
 			}
 			else if(httpStatus == "400"){
 				var jResponse = global.JSON.parse(sResponse); //Convert response to Json Object
 				if(jResponse.errors[0]){
-					gs.addErrorMessage("Freeze failed: " + jResponse.errors[0].message);
+					gs.addErrorMessage("ID Lookup Failed: " + jResponse.errors[0].message);
 					return "";
 				}
 				else{
@@ -71,7 +71,6 @@ AbsoluteAPI.prototype = {
 	},
 	
 	fetchDeviceBySerial : function (serialNumber){
-		//Then use that serial Number to go and get the Uid from Absolute servers
 		try {
 			var id = this.fetchAbsoluteUid(serialNumber);
 			
@@ -109,20 +108,71 @@ AbsoluteAPI.prototype = {
 			else if(httpStatus == "400"){
 				var jResponse = global.JSON.parse(sResponse); //Convert response to Json Object
 				if(jResponse.errors[0]){
-					gs.addErrorMessage("Freeze failed: " + jResponse.errors[0].message);
+					gs.addErrorMessage("Serial Lookup failed: " + jResponse.errors[0].message);
 					return "";
 				}
 				else{
-					gs.addErrorMessage("ID Lookup Failed: Unknown Error");
+					gs.addErrorMessage("Serial Lookup Failed: Unknown Error");
 					return "";
 				}
 			}
 			else if(httpStatus == "401"){
-				gs.addErrorMessage("ID Lookup Failed: API Authentication failed");
+				gs.addErrorMessage("Serial Lookup Failed: API Authentication failed");
 				return "";
 			}
 			else{
-				gs.addErrorMessage("ID Lookup Failed: Unknown Error");
+				gs.addErrorMessage("Serial Lookup Failed: Unknown Error");
+				return "";
+			}
+		}
+		catch(ex) {
+			var temp = ex;
+			return "error";
+		}
+	},
+	
+	fetchCdfsBySerial : function (serialNumber){
+		try {
+			var id = this.fetchAbsoluteUid(serialNumber);
+			
+			if(!id) {
+				return null;
+			}
+			
+			var abtDT = this._getAbtDateTime();
+			var authH = this._generateAuthHeader(this.apiToken, this.apiSecret, abtDT, "GET", "/v2/devices/" + id + "/cdf", "", "");
+			
+			var r = new sn_ws.RESTMessageV2('x_241706_absolute.AbsoluteAPI', 'LookupCdfs');
+			r.setStringParameterNoEscape('abtDateTime', abtDT);
+			r.setStringParameterNoEscape('abtAuthHeader', authH);
+			r.setStringParameterNoEscape('deviceUid', id);
+			
+			var response = r.execute();
+			var httpStatus = response.getStatusCode();
+			var sResponse = response.getBody(); //get response as string
+			
+			
+			if(httpStatus == "200"){
+				var jResponse = global.JSON.parse(sResponse); //Convert response to Json Object
+				return jResponse;
+			}
+			else if(httpStatus == "400"){
+				var jResponse = global.JSON.parse(sResponse); //Convert response to Json Object
+				if(jResponse.errors[0]){
+					gs.addErrorMessage("CDF Lookup failed: " + jResponse.errors[0].message);
+					return "";
+				}
+				else{
+					gs.addErrorMessage("CDF Lookup Failed: Unknown Error");
+					return "";
+				}
+			}
+			else if(httpStatus == "401"){
+				gs.addErrorMessage("CDF Lookup Failed: API Authentication failed");
+				return "";
+			}
+			else{
+				gs.addErrorMessage("CDF Lookup Failed: Unknown Error");
 				return "";
 			}
 		}
@@ -212,13 +262,13 @@ AbsoluteAPI.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-16 18:32:24</sys_created_on>
         <sys_id>cea8c9d8db0023008a3a85184b961906</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>AbsoluteAPI</sys_name>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_script_include_cea8c9d8db0023008a3a85184b961906</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-17 21:08:48</sys_updated_on>
+        <sys_updated_on>2018-08-20 22:00:52</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -29,11 +29,11 @@
         <script><![CDATA[// Check if refresh happened within last 15 minutes.
 var lastRefreshed = new GlideDateTime(current.sys_updated_on);
 var refreshLimit = new GlideDateTime();
-// Subtract 15 minutes.
-refreshLimit.addSeconds(-900);
+// Subtract 5 minutes.
+refreshLimit.addSeconds(-300);
 
 if(lastRefreshed > refreshLimit) {
-	gs.addErrorMessage("You cannot refresh device data more often than once every 15 minutes. Last refreshed at " + lastRefreshed.getValue());
+	gs.addErrorMessage("You cannot refresh device data more often than once every 5 minutes. Last refreshed at " + lastRefreshed.getValue());
 	action.setRedirectURL(current);
 }
 else {
@@ -48,6 +48,7 @@ else {
 		// Set updated values.
 		current.identifier = absoluteDevice.esn;
 		current.id = absoluteDevice.id;
+		current.serial = absoluteDevice.serial;
 		
 		if(absoluteDevice.systemName){
 			current.device_name = absoluteDevice.systemName;
@@ -85,18 +86,143 @@ else {
 		}
 		
 		
-		if(absoluteDevice.hdcStatus.calcStatus){
+		if(absoluteDevice.hdcStatus && absoluteDevice.hdcStatus.calcStatus){
 			current.hardware_status = absoluteDevice.hdcStatus.calcStatus;
+		}
+		if(absoluteDevice.hdcStatus && absoluteDevice.hdcStatus.lastDataReceived) {
+			var lastHardwareUpdated = new GlideDateTime();
+			lastHardwareUpdated.subtract(lastHardwareUpdated.getNumericValue()); //Sets date to 0.
+			lastHardwareUpdated.add(absoluteDevice.hdcStatus.lastDataReceived);
+			current.hardware_last_updated = lastHardwareUpdated;
 		}
 		
 		if(absoluteDevice.sdcStatus && absoluteDevice.sdcStatus.calcStatus){
 			current.software_status = absoluteDevice.sdcStatus.calcStatus;
 		}
+		if(absoluteDevice.sdcStatus && absoluteDevice.sdcStatus.lastDataReceived) {
+			var lastSoftwareUpdated = new GlideDateTime();
+			lastSoftwareUpdated.subtract(lastSoftwareUpdated.getNumericValue()); //Sets date to 0.
+			lastSoftwareUpdated.add(absoluteDevice.sdcStatus.lastDataReceived);
+			current.software_last_updated = lastSoftwareUpdated;
+		}
 		
 		if(absoluteDevice.dlpStatus && absoluteDevice.dlpStatus.calcStatus){
 			current.edd_status = absoluteDevice.dlpStatus.calcStatus;
 		}
+		if(absoluteDevice.dlpStatus && absoluteDevice.dlpStatus.lastDataReceived) {
+			var lastEddUpdated = new GlideDateTime();
+			lastEddUpdated.subtract(lastEddUpdated.getNumericValue()); //Sets date to 0.
+			lastEddUpdated.add(absoluteDevice.dlpStatus.lastDataReceived);
+			current.edd_last_updated = lastEddUpdated;
+		}
 		
+		if(absoluteDevice.classification) {
+			current.usage_classification = absoluteDevice.classification;
+		}
+		
+		if(absoluteDevice.localIp) {
+			current.local_ip = absoluteDevice.localIp;
+		}
+		
+		if(absoluteDevice.publicIp) {
+			current.public_ip = absoluteDevice.publicIp;
+		}
+		
+		if(absoluteDevice.timeZone) {
+			current.timezone = absoluteDevice.timeZone;
+		}
+		
+		if(absoluteDevice.firstCallUtc) {
+			var activationDate = new GlideDateTime();
+			activationDate.subtract(activationDate.getNumericValue()); //Sets date to 0.
+			activationDate.add(absoluteDevice.firstCallUtc);
+			current.activation_date = activationDate;
+		}
+		
+		if(absoluteDevice.totalPhysicalRamBytes) {
+			current.memory_total = (absoluteDevice.totalPhysicalRamBytes / 1000000000).toFixed(2).toString() + " GB";
+		}
+		
+		if(absoluteDevice.availablePhysicalRamBytes) {
+			current.memory_available = (absoluteDevice.availablePhysicalRamBytes / 1000000000).toFixed(2).toString() + " GB";
+		}
+		
+		if(absoluteDevice.volumes) {
+			for(var i = 0; i < absoluteDevice.volumes.length; i++) {
+				var volume = absoluteDevice.volumes[i];
+				if(volume.boot) {
+					current.boot_drive_available_space = (volume.freeSpaceBytes / 1000000000).toFixed(2).toString() + " GB";
+					
+					break;
+				}
+			}
+		}
+		
+		if(absoluteDevice.os) {
+			if(absoluteDevice.os.version) {
+				current.os_version = absoluteDevice.os.version;
+			}
+			if(absoluteDevice.os.build) {
+				current.os_build = absoluteDevice.os.build;
+			}
+			if(absoluteDevice.os.architecture) {
+				current.os_architecture = absoluteDevice.os.architecture;
+			}
+			if(absoluteDevice.os.csdVersion) {
+				current.os_csd_version = absoluteDevice.os.csdVersion;
+			}
+			if(absoluteDevice.os.installDate) {
+				var installDate = new GlideDateTime();
+				installDate.subtract(installDate.getNumericValue());
+				installDate.add(absoluteDevice.os.installDate);
+				current.os_install_date = installDate;
+			}
+			if(absoluteDevice.os.lastBootTime) {
+				var lastBootTime = new GlideDateTime();
+				lastBootTime.subtract(lastBootTime.getNumericValue());
+				lastBootTime.add(absoluteDevice.os.lastBootTime);
+				current.os_last_boot_time = lastBootTime;
+			}
+			if(absoluteDevice.os.productKey) {
+				current.os_product_key = absoluteDevice.os.productKey;
+			}
+		}
+		
+		if(absoluteDevice.cpu) {
+			if(absoluteDevice.cpu.name) {
+				current.cpu_name = absoluteDevice.cpu.name;
+			}
+			if(absoluteDevice.cpu.processorSpeed) {
+				var processorSpeed = (absoluteDevice.cpu.processorSpeed / 1000).toFixed(2).toString() + " GHz";
+				current.cpu_processor_speed = processorSpeed;
+			}
+			if(absoluteDevice.cpu.physicalCores) {
+				current.cpu_physical_cores = absoluteDevice.cpu.physicalCores;
+			}
+			if(absoluteDevice.cpu.logicalCores) {
+				current.cpu_logical_cores = absoluteDevice.cpu.logicalCores;
+			}
+		}
+		
+		if(absoluteDevice.bios) {
+			if(absoluteDevice.bios.version) {
+				current.bios_version = absoluteDevice.bios.version;
+			}
+			if(absoluteDevice.bios.versionDate) {
+				current.bios_version_date = absoluteDevice.bios.versionDate;
+			}
+			if(absoluteDevice.bios.smBiosVersion) {
+				current.bios_smbios_version = absoluteDevice.bios.smBiosVersion;
+			}
+		}
+		
+		if(absoluteDevice.policyGroupUid) {
+			current.policy_group_uid = absoluteDevice.policyGroupUid;
+		}
+		
+		if(absoluteDevice.policyGroupName) {
+			current.policy_group_name = absoluteDevice.policyGroupName;
+		}
 		
 		// Set raw data based on API response.
 		current.device_data_raw = new global.JSON().encode(absoluteDevice);
@@ -104,6 +230,12 @@ else {
 		// Update and redirect.
 		current.sys_updated_on = new GlideDateTime().getDisplayValue();
 		current.update();
+		
+		
+		var upsertCdfs = new UpsertCdfs();
+		upsertCdfs.update(current.id,current.sys_id);
+		
+		
 		action.setRedirectURL(current);
 	}
 	// We failed to get the latest device data, so display error.
@@ -122,7 +254,7 @@ else {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33023a60db4023008a3a85184b96190e</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name>Refresh</sys_name>
         <sys_overrides/>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
@@ -130,7 +262,7 @@ else {
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_ui_action_33023a60db4023008a3a85184b96190e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-20 15:54:08</sys_updated_on>
+        <sys_updated_on>2018-08-21 18:14:42</sys_updated_on>
         <table>x_241706_absolute_device</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
