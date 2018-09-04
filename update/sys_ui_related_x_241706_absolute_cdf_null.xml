@@ -2,7 +2,7 @@
     <sys_ui_related sys_domain="global" table="x_241706_absolute_cdf" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="CDF - Default view" name="x_241706_absolute_cdf" related_list="NULL" sys_domain="global" view="Default view">fe935ab9db0023008a3a85184b96198a</list_id>
+            <list_id display_value="Custom Fields - Default view" name="x_241706_absolute_cdf" related_list="NULL" sys_domain="global" view="Default view">fe935ab9db0023008a3a85184b96198a</list_id>
             <order_by/>
             <position>0</position>
             <related_list>REL:2b5396b9db0023008a3a85184b961996</related_list>
@@ -15,7 +15,7 @@
             <sys_updated_on>2018-08-21 15:50:25</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>CDF - Default view</calculated_name>
+            <calculated_name>Custom Fields - Default view</calculated_name>
             <filter/>
             <name>x_241706_absolute_cdf</name>
             <order_by/>

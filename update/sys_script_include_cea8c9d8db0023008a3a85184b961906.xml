@@ -33,7 +33,7 @@ AbsoluteAPI.prototype = {
 				//We got a good response from the API
 				if(sResponse == "[]"){
 					//The response was blank so we did not find the Serial Number
-					gs.addErrorMessage("This computer is either not registered with Absolute or the agent is not enabled!");
+					gs.addErrorMessage("Absolute is either not installed or not enabled on this device.");
 					return ""; //Need an error Message here
 				}
 				else{
@@ -96,7 +96,7 @@ AbsoluteAPI.prototype = {
 				//We got a good response from the API
 				if(sResponse == "[]"){
 					//The response was blank so we did not find the Serial Number
-					gs.addErrorMessage("This computer is either not registered with Absolute or the agent is not enabled!");
+					gs.addErrorMessage("Absolute is either not installed or not enabled on this device.");
 					return ""; //Need an error Message here
 				}
 				else{
@@ -262,13 +262,13 @@ AbsoluteAPI.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-16 18:32:24</sys_created_on>
         <sys_id>cea8c9d8db0023008a3a85184b961906</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>AbsoluteAPI</sys_name>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_script_include_cea8c9d8db0023008a3a85184b961906</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-20 22:00:52</sys_updated_on>
+        <sys_updated_on>2018-08-29 17:38:48</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -214,6 +214,13 @@ else {
 			if(absoluteDevice.bios.smBiosVersion) {
 				current.bios_smbios_version = absoluteDevice.bios.smBiosVersion;
 			}
+			
+			if(absoluteDevice.bios.releaseDate) {
+				var releaseDate = new GlideDateTime();
+				releaseDate.subtract(releaseDate.getNumericValue());
+				releaseDate.add(absoluteDevice.bios.releaseDate);
+				current.bios_release_date = releaseDate;
+			}
 		}
 		
 		if(absoluteDevice.policyGroupUid) {
@@ -222,6 +229,79 @@ else {
 		
 		if(absoluteDevice.policyGroupName) {
 			current.policy_group_name = absoluteDevice.policyGroupName;
+		}
+		
+		if(absoluteDevice.pageFileSpaceBytes) {
+			current.pagefile_size = (absoluteDevice.pageFileSpaceBytes / 1000000000).toFixed(2).toString() + " GB";
+		}
+		
+		if(absoluteDevice.domain) {
+			current.domain = absoluteDevice.domain;
+		}
+		
+		if(absoluteDevice.avpInfo) {
+			if(absoluteDevice.avpInfo.antivirusName) {
+				current.antivirus_name = absoluteDevice.avpInfo.antivirusName;
+			}
+			
+			if(absoluteDevice.avpInfo.antivirusVersion) {
+				current.antivirus_version = absoluteDevice.avpInfo.antivirusVersion;
+			}
+			
+			if(absoluteDevice.avpInfo.antivirusDefinition) {
+				current.antivirus_definition = absoluteDevice.avpInfo.antivirusDefinition;
+			}
+			
+			if(absoluteDevice.avpInfo.antivirusDefinitionDate) {
+				var antivirusDefinitionDate = new GlideDateTime();
+				antivirusDefinitionDate.subtract(antivirusDefinitionDate.getNumericValue());
+				antivirusDefinitionDate.add(absoluteDevice.avpInfo.antivirusDefinitionDate);				
+				current.antivirus_definition_date = antivirusDefinitionDate;
+			}
+			
+			if(absoluteDevice.avpInfo.antivirusDataReceivedUtc) {
+				var antivirusDataReceivedUtc = new GlideDateTime();
+				antivirusDataReceivedUtc.subtract(antivirusDataReceivedUtc.getNumericValue());
+				antivirusDataReceivedUtc.add(absoluteDevice.avpInfo.antivirusDataReceivedUtc);		
+				current.antivirus_data_received_utc = antivirusDefinitionDate;
+			}
+		}
+		
+		if(absoluteDevice.espInfo) {
+			if(absoluteDevice.espInfo.encryptionProductName) {
+				current.encryption_name = absoluteDevice.espInfo.encryptionProductName;
+			}
+			
+			if(absoluteDevice.espInfo.encryptionVersion) {
+				current.encryption_version = absoluteDevice.espInfo.encryptionVersion;
+			}
+			
+			if(absoluteDevice.espInfo.encryptionAlgorithm) {
+				current.encryption_algorithm = absoluteDevice.espInfo.encryptionAlgorithm;
+			}
+			
+			if(absoluteDevice.espInfo.encryptionStatusDescription) {
+				current.encryption_status_description = absoluteDevice.espInfo.encryptionStatusDescription;
+			}
+			
+			if(absoluteDevice.espInfo.encryptionKeySize) {
+				current.encryption_key_size = absoluteDevice.espInfo.encryptionKeySize;
+			}
+			
+			if(absoluteDevice.espInfo.hardwareEncryption) {
+				current.encryption_hardware_encryption = absoluteDevice.espInfo.hardwareEncryption;
+			}
+			
+			if(absoluteDevice.espInfo.lastEncryptionDataReceivedUtc) {
+				var lastEncryptionDataReceivedUtc = new GlideDateTime();
+				lastEncryptionDataReceivedUtc.subtract(lastEncryptionDataReceivedUtc.getNumericValue());
+				lastEncryptionDataReceivedUtc.add(absoluteDevice.espInfo.lastEncryptionDataReceivedUtc);	
+				current.encryption_data_received_utc = lastEncryptionDataReceivedUtc;
+			}
+			
+			if(absoluteDevice.espInfo.encryptionStatus) {
+				current.encryption_status = absoluteDevice.espInfo.encryptionStatus;
+			}
 		}
 		
 		// Set raw data based on API response.
@@ -240,7 +320,6 @@ else {
 	}
 	// We failed to get the latest device data, so display error.
 	else {
-		gs.addErrorMessage("Unable to refresh device data. Please try again later.");
 		action.setRedirectURL(current);
 	}
 }]]></script>
@@ -254,7 +333,7 @@ else {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33023a60db4023008a3a85184b96190e</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>Refresh</sys_name>
         <sys_overrides/>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
@@ -262,7 +341,7 @@ else {
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_ui_action_33023a60db4023008a3a85184b96190e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-21 18:14:42</sys_updated_on>
+        <sys_updated_on>2018-09-04 23:33:40</sys_updated_on>
         <table>x_241706_absolute_device</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

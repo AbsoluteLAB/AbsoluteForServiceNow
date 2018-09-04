@@ -5,7 +5,7 @@
         <basic_apply_to>x_241706_absolute_device</basic_apply_to>
         <basic_query_from>x_241706_absolute_cdf</basic_query_from>
         <insert_callback/>
-        <name>Absolute CDFs</name>
+        <name>Absolute Custom Fields</name>
         <query_from/>
         <query_with><![CDATA[current.addQuery('device', parent.sys_id);]]></query_with>
         <reference_field>device</reference_field>
@@ -15,14 +15,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-20 23:01:16</sys_created_on>
         <sys_id>2c9c6ee5db0423008a3a85184b961953</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Absolute CDFs</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Absolute Custom Fields</sys_name>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_relationship_2c9c6ee5db0423008a3a85184b961953</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-21 16:18:44</sys_updated_on>
+        <sys_updated_on>2018-08-28 21:49:36</sys_updated_on>
     </sys_relationship>
     <sys_translated_text action="delete_multiple" query="documentkey=2c9c6ee5db0423008a3a85184b961953"/>
 </record_update>

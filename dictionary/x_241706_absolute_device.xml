@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Device" max_length="40" name="x_241706_absolute_device" type="collection">
         <element label="Activation Date" max_length="40" name="activation_date" read_only="true" type="glide_date_time"/>
+        <element label="Antivirus Data Received UTC" max_length="40" name="antivirus_data_received_utc" read_only="true" type="glide_date_time"/>
+        <element label="Antivirus Definition" max_length="40" name="antivirus_definition" read_only="true" type="string"/>
+        <element label="Antivirus Definition Date" max_length="40" name="antivirus_definition_date" read_only="true" type="glide_date_time"/>
+        <element label="Antivirus Name" max_length="40" name="antivirus_name" read_only="true" type="string"/>
+        <element label="Antivirus Version" max_length="40" name="antivirus_version" read_only="true" type="string"/>
         <element label="Average Daily Usage (Hours:Minutes)" max_length="40" name="average_daily_usage" read_only="true" type="string"/>
+        <element label="BIOS Release Date" max_length="40" name="bios_release_date" read_only="true" type="glide_date_time"/>
         <element label="BIOS SMBIOS Version" max_length="40" name="bios_smbios_version" read_only="true" type="string"/>
         <element label="BIOS Version" max_length="40" name="bios_version" read_only="true" type="string"/>
         <element label="BIOS Version Date" max_length="40" name="bios_version_date" read_only="true" type="string"/>
@@ -12,8 +18,17 @@
         <element label="CPU Processor Speed" max_length="40" name="cpu_processor_speed" read_only="true" type="string"/>
         <element label="Device Data Raw" max_length="12000" name="device_data_raw" read_only="true" type="string"/>
         <element label="Device Name" max_length="40" name="device_name" read_only="true" type="string"/>
+        <element label="Domain" max_length="40" name="domain" read_only="true" type="string"/>
         <element label="EDD Last Updated" max_length="40" name="edd_last_updated" read_only="true" type="glide_date_time"/>
         <element label="EDD Status" max_length="40" name="edd_status" read_only="true" type="string"/>
+        <element label="Encryption Algorithm" max_length="40" name="encryption_algorithm" read_only="true" type="string"/>
+        <element label="Encryption Data Received UTC" max_length="40" name="encryption_data_received_utc" read_only="true" type="glide_date_time"/>
+        <element label="Encryption Hardware Encryption" max_length="40" name="encryption_hardware_encryption" read_only="true" type="boolean"/>
+        <element label="Encryption Key Size" max_length="40" name="encryption_key_size" read_only="true" type="string"/>
+        <element label="Encryption Name" max_length="40" name="encryption_name" read_only="true" type="string"/>
+        <element label="Encryption Status" max_length="40" name="encryption_status" read_only="true" type="string"/>
+        <element label="Encryption Status Description" max_length="40" name="encryption_status_description" read_only="true" type="string"/>
+        <element label="Encryption Version" max_length="40" name="encryption_version" read_only="true" type="string"/>
         <element label="Hardware Last Updated" max_length="40" name="hardware_last_updated" read_only="true" type="glide_date_time"/>
         <element label="Hardware Status" max_length="40" name="hardware_status" read_only="true" type="string"/>
         <element label="ID" max_length="40" name="id" read_only="true" type="string"/>
@@ -32,6 +47,7 @@
         <element label="OS Name" max_length="40" name="os_name" read_only="true" type="string"/>
         <element label="OS Product Key" max_length="40" name="os_product_key" read_only="true" type="string"/>
         <element label="OS Version" max_length="40" name="os_version" read_only="true" type="string"/>
+        <element label="Pagefile Size" max_length="40" name="pagefile_size" read_only="true" type="string"/>
         <element label="Policy Group Name" max_length="40" name="policy_group_name" read_only="true" type="string"/>
         <element label="Policy Group Uid" max_length="40" name="policy_group_uid" read_only="true" type="string"/>
         <element label="Public IP" max_length="40" name="public_ip" read_only="true" type="string"/>
