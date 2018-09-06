@@ -21,7 +21,7 @@ UpsertCdfs.prototype = {
 			var apiSecret = gs.getProperty('x_241706_absolute.Absolute_API_Secret');
 			var apiToken = gs.getProperty('x_241706_absolute.Absolute_API_Token');
 			var api = new AbsoluteAPI(apiToken, apiSecret);
-			var cdfData = api.fetchCdfsBySerial('6390 7226 2152 9968 2597 0453 70').cdfValues;
+			var cdfData = api.fetchCdfsBySerial(device.serial).cdfValues;
 			
 			for(var i = 0; i < cdfData.length; i++) {
 				var currentCdfData = cdfData[i];
@@ -61,13 +61,13 @@ UpsertCdfs.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-20 22:18:31</sys_created_on>
         <sys_id>69ff162ddbc023008a3a85184b96190d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>UpsertCdfs</sys_name>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_script_include_69ff162ddbc023008a3a85184b96190d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-20 23:11:06</sys_updated_on>
+        <sys_updated_on>2018-09-06 19:19:15</sys_updated_on>
     </sys_script_include>
 </record_update>
