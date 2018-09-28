@@ -12,6 +12,7 @@
         <element label="BIOS Version" max_length="40" name="bios_version" read_only="true" type="string"/>
         <element label="BIOS Version Date" max_length="40" name="bios_version_date" read_only="true" type="string"/>
         <element label="Boot Drive Available Space" max_length="40" name="boot_drive_available_space" read_only="true" type="string"/>
+        <element display="true" label="Computer" mandatory="true" max_length="32" name="cmdb_ci_computer" reference="cmdb_ci_computer" type="reference"/>
         <element label="CPU Logical Cores" max_length="40" name="cpu_logical_cores" read_only="true" type="string"/>
         <element label="CPU Name" max_length="40" name="cpu_name" read_only="true" type="string"/>
         <element label="CPU Physical Cores" max_length="40" name="cpu_physical_cores" read_only="true" type="string"/>
@@ -57,5 +58,8 @@
         <element label="Timezone" max_length="40" name="timezone" read_only="true" type="string"/>
         <element label="Usage Classification" max_length="40" name="usage_classification" read_only="true" type="string"/>
         <element label="Username" max_length="40" name="username" read_only="true" type="string"/>
+        <index name="index">
+            <element name="cmdb_ci_computer"/>
+        </index>
     </element>
 </database>
