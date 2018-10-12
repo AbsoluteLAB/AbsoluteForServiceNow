@@ -11,11 +11,12 @@ AbsoluteAPI.prototype = {
 	initialize: function(apiToken, apiSecret) {
 		this.apiToken = apiToken;
 		this.apiSecret = apiSecret;
+		this.log = new global.GSLog("x_241706_absolute.logging.verbosity", "AbsoluteAPI");
 	},
 	fetchAbsoluteUid : function (serialNumber){
 		// Use that serial Number to go and get the Uid from Absolute servers
 		try {
-			var query = "$filter=agentStatus eq 'A' and serial eq '" + serialNumber + "'&$select=id";
+			var query = "$filter=agentStatus eq 'A' and substringof(Serial, '" + serialNumber + "')&$orderby=firstCallUtc desc&$select=id";
 			var abtDT = this._getAbtDateTime();
 			var authH = this._generateAuthHeader(this.apiToken, this.apiSecret, abtDT, "GET", "/v2/reporting/devices", query, "");
 			
@@ -27,9 +28,12 @@ AbsoluteAPI.prototype = {
 			var response = r.execute();
 			var httpStatus = response.getStatusCode();
 			var sResponse = response.getBody(); //get response as string
-			
-			
+						
 			if(httpStatus == "200"){
+				if(sResponse) {
+					this.log.logDebug(sResponse);	
+				}
+				
 				//We got a good response from the API
 				if(sResponse == "[]"){
 					//The response was blank so we did not find the Serial Number
@@ -45,6 +49,10 @@ AbsoluteAPI.prototype = {
 				}
 			}
 			else if(httpStatus == "400"){
+				if(sResponse) {
+					this.log.logErr(sResponse);
+				}
+				
 				var jResponse = global.JSON.parse(sResponse); //Convert response to Json Object
 				if(jResponse.errors[0]){
 					gs.addErrorMessage("Absolute API Error, please try again later. Received message was: " + jResponse.errors[0].message);
@@ -56,10 +64,16 @@ AbsoluteAPI.prototype = {
 				}
 			}
 			else if(httpStatus == "401"){
+				if(sResponse) {
+					this.log.logErr(sResponse);
+				}
 				gs.addErrorMessage("Absolute API Error: API Authentication failed");
 				return "";
 			}
 			else{
+				if(sResponse) {
+					this.log.logErr(sResponse);
+				}
 				gs.addErrorMessage("Absolute API Error, please try again later.");
 				return "";
 			}
@@ -90,9 +104,12 @@ AbsoluteAPI.prototype = {
 			var response = r.execute();
 			var httpStatus = response.getStatusCode();
 			var sResponse = response.getBody(); //get response as string
-			
-			
+						
 			if(httpStatus == "200"){
+				if(sResponse) {
+					this.log.logDebug(sResponse);	
+				}
+				
 				//We got a good response from the API
 				if(sResponse == "[]"){
 					//The response was blank so we did not find the Serial Number
@@ -106,6 +123,9 @@ AbsoluteAPI.prototype = {
 				}
 			}
 			else if(httpStatus == "400"){
+				if(sResponse) {
+					this.log.logErr(sResponse);
+				}
 				var jResponse = global.JSON.parse(sResponse); //Convert response to Json Object
 				if(jResponse.errors[0]){
 					gs.addErrorMessage("Absolute API Error, Serial Lookup failed. Message was: " + jResponse.errors[0].message);
@@ -117,10 +137,16 @@ AbsoluteAPI.prototype = {
 				}
 			}
 			else if(httpStatus == "401"){
+				if(sResponse) {
+					this.log.logErr(sResponse);
+				}
 				gs.addErrorMessage("Absolute API Error, Serial Lookup Failed: API Authentication failed");
 				return "";
 			}
 			else{
+				if(sResponse) {
+					this.log.logErr(sResponse);
+				}
 				gs.addErrorMessage("Absolute API Error, Serial Lookup Failed: Unknown Error");
 				return "";
 			}
@@ -150,28 +176,42 @@ AbsoluteAPI.prototype = {
 			var response = r.execute();
 			var httpStatus = response.getStatusCode();
 			var sResponse = response.getBody(); //get response as string
-			
-			
+						
 			if(httpStatus == "200"){
+				if(sResponse) {
+					this.log.logDebug(sResponse);	
+				}
 				var jResponse = global.JSON.parse(sResponse); //Convert response to Json Object
 				return jResponse;
 			}
 			else if(httpStatus == "400"){
+				if(sResponse) {
+					this.log.logErr(sResponse);
+				}
 				var errorResponse = global.JSON.parse(sResponse); //Convert response to Json Object
 				if(errorResponse.errors[0]){
 					gs.addErrorMessage("Absolute API Error, CDF Lookup failed: " + errorResponse.errors[0].message);
 					return "";
 				}
 				else{
+					if(sResponse) {
+					this.log.logErr(sResponse);
+					}
 					gs.addErrorMessage("Absolute API Error, CDF Lookup Failed: Unknown Error");
 					return "";
 				}
 			}
 			else if(httpStatus == "401"){
+				if(sResponse) {
+					this.log.logErr(sResponse);
+				}
 				gs.addErrorMessage("Absolute API Error, CDF Lookup Failed: API Authentication failed");
 				return "";
 			}
 			else{
+				if(sResponse) {
+					this.log.logErr(sResponse);
+				}
 				gs.addErrorMessage("Absolute API Error, CDF Lookup Failed: Unknown Error");
 				return "";
 			}
@@ -262,13 +302,13 @@ AbsoluteAPI.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-16 18:32:24</sys_created_on>
         <sys_id>cea8c9d8db0023008a3a85184b961906</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>AbsoluteAPI</sys_name>
         <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_script_include_cea8c9d8db0023008a3a85184b961906</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-09-28 19:33:39</sys_updated_on>
+        <sys_updated_on>2018-10-12 21:01:46</sys_updated_on>
     </sys_script_include>
 </record_update>
