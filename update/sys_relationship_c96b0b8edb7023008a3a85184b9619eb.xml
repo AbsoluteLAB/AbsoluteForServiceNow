@@ -17,9 +17,9 @@
         <sys_id>c96b0b8edb7023008a3a85184b9619eb</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Device to Computer</sys_name>
-        <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
+        <sys_package display_value="Absolute ITSM Connector" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
+        <sys_scope display_value="Absolute ITSM Connector">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_relationship_c96b0b8edb7023008a3a85184b9619eb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-09-28 21:24:10</sys_updated_on>

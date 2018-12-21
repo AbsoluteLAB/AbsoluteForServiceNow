@@ -17,9 +17,9 @@
         <sys_id>14b22ef1db4023008a3a85184b961981</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Absolute Data</sys_name>
-        <sys_package display_value="Absolute for ServiceNow" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
+        <sys_package display_value="Absolute ITSM Connector" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Absolute for ServiceNow">e1cffc14db0023008a3a85184b9619b2</sys_scope>
+        <sys_scope display_value="Absolute ITSM Connector">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_relationship_14b22ef1db4023008a3a85184b961981</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-08-21 17:00:49</sys_updated_on>
