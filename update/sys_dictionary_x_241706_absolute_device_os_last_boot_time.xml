@@ -53,7 +53,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-20 18:07:05</sys_created_on>
-        <sys_id>537135b04f22230087aa0fbf9310c70c</sys_id>
+        <sys_id>81af4ba5db3223003acbfe1b68961958</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>OS Last Boot Time</sys_name>
         <sys_package display_value="Absolute ITSM Connector" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
@@ -61,7 +61,7 @@
         <sys_scope display_value="Absolute ITSM Connector">e1cffc14db0023008a3a85184b9619b2</sys_scope>
         <sys_update_name>sys_dictionary_x_241706_absolute_device_os_last_boot_time</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-12-20 17:24:39</sys_updated_on>
+        <sys_updated_on>2019-01-04 18:27:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

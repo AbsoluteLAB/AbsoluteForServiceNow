@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-04 18:35:35</sys_created_on>
+        <sys_id>4e7153a1db3223003acbfe1b689619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>View Absolute Device.x_241706_absolute.user</sys_name>
+        <sys_package display_value="Absolute ITSM Connector" source="x_241706_absolute">e1cffc14db0023008a3a85184b9619b2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Absolute ITSM Connector">e1cffc14db0023008a3a85184b9619b2</sys_scope>
+        <sys_ui_action display_value="View Absolute Device">55060a90dbc023008a3a85184b961980</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_4e7153a1db3223003acbfe1b689619d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-04 18:35:35</sys_updated_on>
+        <sys_user_role display_value="x_241706_absolute.user" name="x_241706_absolute.user">b5cfb854db0023008a3a85184b961907</sys_user_role>
+    </sys_ui_action_role>
+</record_update>
